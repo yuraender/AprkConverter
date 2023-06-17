@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AprkParser.Properties {
+namespace AprkConverter.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

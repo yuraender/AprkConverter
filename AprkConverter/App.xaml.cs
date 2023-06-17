@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace AprkParser {
+namespace AprkConverter {
     /// <summary>
     /// Логика взаимодействия для App.xaml
     /// </summary>
