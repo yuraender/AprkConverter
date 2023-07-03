@@ -13,9 +13,7 @@ namespace AprkConverter.Windows {
         private Project _project;
 
         private void SaveButton_Click(object sender, RoutedEventArgs e) {
-            Document document = _project.Parse();
-            SaveDocument(document);
-            MessageBox.Show("Successfully converted and saved!");
+            SaveDocument(_project.Parse());
         }
 
         private void OpenProjectMenuItem_Click(object sender, RoutedEventArgs e) {
@@ -63,6 +61,7 @@ namespace AprkConverter.Windows {
             saveFileDialog.Filter = "Документ ВЕРТИКАЛЬ|*.*";
             if (saveFileDialog.ShowDialog().Value) {
                 File.WriteAllText(saveFileDialog.FileName, document.ToString());
+                MessageBox.Show("Successfully converted and saved!");
             }
         }
     }
